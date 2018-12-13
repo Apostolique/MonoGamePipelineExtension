@@ -1,0 +1,19 @@
+{
+    "file": "example",
+    "atlas": [
+        {
+            "name": "example01",
+            "position_x": 0,
+            "position_y": 0,
+            "width": 200,
+            "height": 200
+        },
+        {
+            "name": "example02",
+            "position_x": 210,
+            "position_y": 0,
+            "width": 200,
+            "height": 200
+        }
+    ]
+}

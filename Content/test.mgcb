@@ -1,0 +1,21 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin
+/intermediateDir:obj
+/platform:DesktopGL
+/config:
+/profile:Reach
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+/reference:..\bin\Debug\net45\MonoGameContentPipelineExamples.dll
+
+#---------------------------------- Content ---------------------------------#
+
+#begin example_atlas.json
+/importer:AtlasImporter
+/processor:AtlasProcessor
+/build:example_atlas.json
+
