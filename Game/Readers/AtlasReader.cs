@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Graphics;
 using MonoGame.Extended.Content;
 using MonoGame.Extended.TextureAtlases;
 
-namespace MonoGameContentPipelineExamples.Readers
+namespace PipelineExtension.Readers
 {
     class AtlasReader : ContentTypeReader<Atlas>
     {

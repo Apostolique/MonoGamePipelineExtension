@@ -1,4 +1,4 @@
-﻿namespace MonoGameContentPipelineExamples.Atlas
+﻿namespace PipelineExtension.Atlas
 {
     public class AtlasProcessorResult
     {

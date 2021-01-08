@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using MonoGame.Extended.TextureAtlases;
 
-namespace MonoGameContentPipelineExamples.Readers
+namespace PipelineExtension.Readers
 {
     class Atlas
     {

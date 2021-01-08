@@ -10,7 +10,8 @@
 
 #-------------------------------- References --------------------------------#
 
-/reference:..\bin\Debug\net45\MonoGameContentPipelineExamples.dll
+/reference:..\..\PipelineExtension\bin\Release\netstandard2.0\PipelineExtension.dll
+/reference:..\..\PipelineExtension\bin\Release\netstandard2.0\System.Text.Json.dll
 
 #---------------------------------- Content ---------------------------------#
 
@@ -30,4 +31,3 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:example.png
-

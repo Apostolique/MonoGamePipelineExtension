@@ -1,8 +1,8 @@
 ﻿using System.IO;
+using System.Text.Json;
 using Microsoft.Xna.Framework.Content.Pipeline;
-using Newtonsoft.Json;
 
-namespace MonoGameContentPipelineExamples.Atlas
+namespace PipelineExtension.Atlas
 {
     /// <summary>
     /// This class will be instantiated by the XNA Framework Content Pipeline
@@ -14,7 +14,7 @@ namespace MonoGameContentPipelineExamples.Atlas
     /// extension, display name, and default processor for this importer.
     /// </summary>
 
-    [ContentImporter(".json", DisplayName = "MonoGameContentPipelineExamples - Atlas Importer", DefaultProcessor = "AtlasProcessor")]
+    [ContentImporter(".json", DisplayName = "PipelineExtension - Atlas Importer", DefaultProcessor = "AtlasProcessor")]
     public class AtlasImporter : ContentImporter<AtlasFile>
     {
         public override AtlasFile Import(string filename, ContentImporterContext context) {
@@ -22,7 +22,7 @@ namespace MonoGameContentPipelineExamples.Atlas
             // Process the input object, and return the modified data.
             using (var streamReader = new StreamReader(filename)) {
                 string jsonRaw = streamReader.ReadToEnd();
-                return JsonConvert.DeserializeObject<AtlasFile>(jsonRaw);
+                return JsonSerializer.Deserialize<AtlasFile>(jsonRaw);
             }
         }
     }

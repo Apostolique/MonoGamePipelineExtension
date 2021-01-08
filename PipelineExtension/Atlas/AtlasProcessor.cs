@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Xna.Framework.Content.Pipeline;
 
-namespace MonoGameContentPipelineExamples.Atlas
+namespace PipelineExtension.Atlas
 {
     /// <summary>
     /// This class will be instantiated by the XNA Framework Content Pipeline
@@ -14,7 +14,7 @@ namespace MonoGameContentPipelineExamples.Atlas
     /// TODO: change the ContentProcessor attribute to specify the correct
     /// display name for this processor.
     /// </summary>
-    [ContentProcessor(DisplayName = "MonoGameContentPipelineExamples - Atlas Processor")]
+    [ContentProcessor(DisplayName = "PipelineExtension - Atlas Processor")]
     public class AtlasProcessor : ContentProcessor<AtlasFile, AtlasProcessorResult>
     {
         public override AtlasProcessorResult Process(AtlasFile input, ContentProcessorContext context) {

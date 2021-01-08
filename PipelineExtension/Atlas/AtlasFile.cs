@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MonoGameContentPipelineExamples.Atlas
+namespace PipelineExtension.Atlas
 {
     public class AtlasFile
     {

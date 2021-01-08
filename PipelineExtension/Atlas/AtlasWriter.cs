@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework.Content.Pipeline;
 using Microsoft.Xna.Framework.Content.Pipeline.Serialization.Compiler;
 
-namespace MonoGameContentPipelineExamples.Atlas
+namespace PipelineExtension.Atlas
 {
     [ContentTypeWriter]
     class AtlasWriter : ContentTypeWriter<AtlasProcessorResult>
@@ -18,10 +18,10 @@ namespace MonoGameContentPipelineExamples.Atlas
             }
         }
         public override string GetRuntimeType(TargetPlatform targetPlatform) {
-            return "MonoGameContentPipelineExamples.Readers.Atlas, MonoGameContentPipelineExamples";
+            return "PipelineExtension.Readers.Atlas, PipelineExtension";
         }
         public override string GetRuntimeReader(TargetPlatform targetPlatform) {
-            return "MonoGameContentPipelineExamples.Readers.AtlasReader, MonoGameContentPipelineExamples";
+            return "PipelineExtension.Readers.AtlasReader, PipelineExtension";
         }
     }
 }
